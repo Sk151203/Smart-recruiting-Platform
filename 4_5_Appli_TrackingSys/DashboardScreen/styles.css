@@ -1,0 +1,61 @@
+/* Summary Section */
+#summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.summary-item {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.summary-item h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.summary-item p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Recent Applications Table */
+#recentApplications {
+    margin-top: 20px;
+}
+
+#recentApplicationsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#recentApplicationsTable th,
+#recentApplicationsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#recentApplicationsTable th {
+    background-color: #f4f4f4;
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

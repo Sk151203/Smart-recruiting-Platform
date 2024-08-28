@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Creation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Create a Job</h1>
+
+    <form id="jobCreationForm">
+        <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" placeholder="Enter the job title" required>
+        </div>
+
+        <div class="form-group">
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" placeholder="Enter the job description" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" required>
+                <option value="">Select a department</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="jobLocation">Job Location</label>
+            <select id="jobLocation" required>
+                <option value="">Select a job location</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="employmentType">Employment Type</label>
+            <select id="employmentType" required>
+                <option value="">Select employment type</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+
+        <!-- Other form elements like salary range, qualifications, etc. -->
+
+        <button type="submit">Create Job</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

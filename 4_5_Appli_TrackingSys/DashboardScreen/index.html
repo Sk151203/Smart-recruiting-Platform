@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    
+    <section id="summary">
+        <div class="summary-item">
+            <h2>Job Openings</h2>
+            <p id="jobOpeningsCount">0</p>
+        </div>
+        <div class="summary-item">
+            <h2>Applications</h2>
+            <p id="applicationsCount">0</p>
+        </div>
+    </section>
+    
+    <section id="recentApplications">
+        <h2>Recent Applications</h2>
+        <table id="recentApplicationsTable">
+            <thead>
+                <tr>
+                    <th>Applicant Name</th>
+                    <th>Job Title</th>
+                    <th>Status</th>
+                    <th>Date Applied</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Recent applications will be populated dynamically -->
+            </tbody>
+        </table>
+        <button id="viewAllApplicationsButton">View All Applications</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

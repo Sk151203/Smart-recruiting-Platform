@@ -1,0 +1,30 @@
+HTML for the Modal (Add this inside form_creation.html)
+
+
+<!-- Add Field Modal -->
+<div id="addFieldModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Field</h2>
+        
+        <label for="fieldName">Field Name</label>
+        <input type="text" id="fieldName" placeholder="Enter the field name" required>
+
+        <label for="fieldType">Field Type</label>
+        <select id="fieldType" required>
+            <option value="" disabled selected>Select field type</option>
+            <option value="text">Textbox</option>
+            <option value="dropdown">Dropdown</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="radio">Radio Button</option>
+            <option value="date">Date Picker</option>
+        </select>
+
+        <div id="fieldOptionsSection" style="display: none;">
+            <label for="fieldOptions">Field Options</label>
+            <input type="text" id="fieldOptions" placeholder="Enter options separated by commas">
+        </div>
+
+        <button type="button" id="addFieldToFormButton">Add Field</button>
+    </div>
+</div>

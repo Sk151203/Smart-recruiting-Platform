@@ -1,0 +1,62 @@
+<!--Add this to applications_management.html:  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Applications Management</h1>
+
+    <section id="filters">
+        <h2>Filters</h2>
+        <div class="filter-group">
+            <label for="jobTitle">Job Title</label>
+            <select id="jobTitle" name="jobTitle">
+                <option value="">Select job title</option>
+                <!-- Options will be populated dynamically -->
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="">Select status</option>
+                <option value="applied">Applied</option>
+                <option value="in_review">In Review</option>
+                <option value="interview">Interview</option>
+                <option value="offered">Offered</option>
+                <option value="rejected">Rejected</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="dateRange">Date Applied</label>
+            <input type="text" id="dateRange" name="dateRange" placeholder="Select date range">
+        </div>
+        <button id="applyFilters">Apply Filters</button>
+    </section>
+
+    <section id="applicationsList">
+        <h2>Applications List</h2>
+        <table id="applicationsListTable">
+            <thead>
+                <tr>
+                    <th>Applicant Name</th>
+                    <th>Job Title</th>
+                    <th>Status</th>
+                    <th>Date Applied</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Applications will be populated dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!-- Add this to application_details.html:
+
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Application Details</h1>
+
+    <section id="applicantInformation">
+        <h2>Applicant Information</h2>
+        <p><strong>Name:</strong> <span id="applicantName">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="applicantEmail">johndoe@example.com</span></p>
+        <p><strong>Phone:</strong> <span id="applicantPhone">123-456-7890</span></p>
+        <p><a href="resume.pdf" id="resumeLink" download>Download Resume</a></p>
+    </section>
+
+    <section id="jobInformation">
+        <h2>Job Information</h2>
+        <p><strong>Job Title:</strong> <span id="jobTitle">Software Engineer</span></p>
+        <p><strong>Department:</strong> <span id="jobDepartment">IT</span></p>
+        <p><strong>Location:</strong> <span id="jobLocation">New York</span></p>
+    </section>
+
+    <section id="applicationStatus">
+        <h2>Application Status</h2>
+        <p><strong>Current Status:</strong> <span id="currentStatus">In Review</span></p>
+        <div>
+            <label for="statusDropdown">Change Status</label>
+            <select id="statusDropdown" name="statusDropdown">
+                <option value="applied">Applied</option>
+                <option value="in_review">In Review</option>
+                <option value="interview">Interview</option>
+                <option value="offered">Offered</option>
+                <option value="rejected">Rejected</option>
+            </select>
+            <button id="saveStatus">Save Status</button>
+        </div>
+    </section>
+
+    <section id="notesSection">
+        <h2>Notes</h2>
+        <textarea id="notesTextarea" placeholder="Add notes about the application"></textarea>
+        <button id="saveNotes">Save Notes</button>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

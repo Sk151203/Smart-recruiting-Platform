@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Drafts</title>
+    <link rel="stylesheet" href="/JobCreate&Publish/JobDrafts_Screen/styles.css">
+</head>
+<body>
+    <div class="job-drafts-container">
+        <h2>Job Drafts</h2>
+        <table id="draftsTable">
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Department</th>
+                    <th>Date Created</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example row -->
+                <tr>
+                    <td>Software Developer</td>
+                    <td>IT</td>
+                    <td>2024-08-01</td>
+                    <td>
+                        <button onclick="editDraft('1')">Edit</button>
+                        <button onclick="deleteDraft('1')">Delete</button>
+                    </td>
+                </tr>
+                <!-- Additional rows will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/JobCreate&Publish/JobDrafts_Screen/script.js"></script>
+</body>
+</html>

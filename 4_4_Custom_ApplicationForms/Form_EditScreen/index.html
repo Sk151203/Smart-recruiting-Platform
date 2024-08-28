@@ -1,0 +1,73 @@
+Ensure the structure is similar to the form creation screen, but with fields pre-filled. Add this to form_editing.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Editing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Edit Form</h1>
+    <form id="formEditingForm">
+        <label for="formName">Form Name</label>
+        <input type="text" id="formName" placeholder="Enter the form name" required>
+
+        <label for="associatedJob">Associated Job</label>
+        <select id="associatedJob" required>
+            <option value="" disabled>Select a job</option>
+            <!-- Options will be populated dynamically -->
+        </select>
+
+        <div id="formFieldsSection">
+            <h2>Form Fields</h2>
+            <button type="button" id="addFieldButton">Add Field</button>
+            <table id="fieldListTable">
+                <thead>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Field Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fields will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <button type="submit" id="saveFormButton">Save Form</button>
+    </form>
+
+    <!-- Include modal for adding fields -->
+    <div id="addFieldModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Field</h2>
+            
+            <label for="fieldName">Field Name</label>
+            <input type="text" id="fieldName" placeholder="Enter the field name" required>
+
+            <label for="fieldType">Field Type</label>
+            <select id="fieldType" required>
+                <option value="" disabled selected>Select field type</option>
+                <option value="text">Textbox</option>
+                <option value="dropdown">Dropdown</option>
+                <option value="checkbox">Checkbox</option>
+                <option value="radio">Radio Button</option>
+                <option value="date">Date Picker</option>
+            </select>
+
+            <div id="fieldOptionsSection" style="display: none;">
+                <label for="fieldOptions">Field Options</label>
+                <input type="text" id="fieldOptions" placeholder="Enter options separated by commas">
+            </div>
+
+            <button type="button" id="addFieldToFormButton">Add Field</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

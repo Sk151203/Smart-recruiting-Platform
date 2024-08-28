@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Categories Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Job Categories Management</h1>
+
+    <div class="form-group">
+        <label for="categoryType">Category Type</label>
+        <select id="categoryType" required>
+            <option value="">Select category type</option>
+            <option value="Department">Department</option>
+            <option value="Location">Location</option>
+            <option value="Employment Type">Employment Type</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="categoryName">Category Name</label>
+        <input type="text" id="categoryName" placeholder="Enter the category name" required>
+    </div>
+    <button id="addCategoryButton">Add Category</button>
+
+    <h2>Categories List</h2>
+    <table id="categoriesTable">
+        <thead>
+            <tr>
+                <th>Category Type</th>
+                <th>Category Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <!-- Modal for editing category -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit Category</h2>
+            <div class="form-group">
+                <label for="editCategoryType">Category Type</label>
+                <select id="editCategoryType" required>
+                    <option value="">Select category type</option>
+                    <option value="Department">Department</option>
+                    <option value="Location">Location</option>
+                    <option value="Employment Type">Employment Type</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="editCategoryName">Category Name</label>
+                <input type="text" id="editCategoryName" placeholder="Enter the category name" required>
+            </div>
+            <button id="saveCategoryButton">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

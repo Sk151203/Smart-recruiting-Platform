@@ -1,0 +1,44 @@
+/* Ensure the styles are consistent with your design. Add or update the following in styles.css:
+
+ */
+
+ /* Application Details Screen */
+#applicantInformation, #jobInformation, #applicationStatus, #notesSection {
+    margin-bottom: 20px;
+}
+
+#applicantInformation p, #jobInformation p, #applicationStatus p {
+    margin: 10px 0;
+}
+
+#resumeLink {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+#resumeLink:hover {
+    text-decoration: underline;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

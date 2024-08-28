@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Published Jobs</title>
+    <link rel="stylesheet" href="/JobCreate&Publish/PublishedJobs_Screen/styles.css">
+</head>
+<body>
+    <div class="published-jobs-container">
+        <h2>Published Jobs</h2>
+        <table id="publishedJobsTable">
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Department</th>
+                    <th>Date Published</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example row -->
+                <tr data-job-id="1">
+                    <td>Software Engineer</td>
+                    <td>IT</td>
+                    <td>2024-08-10</td>
+                    <td>
+                        <button onclick="viewJob('1')">View</button>
+                        <button onclick="editJob('1')">Edit</button>
+                        <button onclick="unpublishJob('1')">Unpublish</button>
+                    </td>
+                </tr>
+                <!-- Additional rows will be populated dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/JobCreate&Publish/PublishedJobs_Screen/script.js"></script>
+</body>
+</html>

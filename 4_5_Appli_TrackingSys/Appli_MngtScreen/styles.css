@@ -1,0 +1,72 @@
+/* Ensure the styles are consistent with your design. Add or update the following in styles.css: */
+
+/* Filters Section */
+#filters {
+    margin-bottom: 20px;
+}
+
+.filter-group {
+    margin-bottom: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#applyFilters {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#applyFilters:hover {
+    background-color: #0056b3;
+}
+
+/* Applications List Table */
+#applicationsList {
+    margin-top: 20px;
+}
+
+#applicationsListTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#applicationsListTable th,
+#applicationsListTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#applicationsListTable th {
+    background-color: #f4f4f4;
+}
+
+/* Buttons */
+button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

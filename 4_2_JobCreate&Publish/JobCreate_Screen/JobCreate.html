@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Creation</title>
+    <link rel="stylesheet" href="/JobCreate&Publish/JobCreate_Screen/styles.css">
+</head>
+<body>
+    <div class="job-creation-container">
+        <h2>Create a Job Posting</h2>
+        <form id="jobCreationForm">
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter the job title" required>
+            </div>
+            <div class="form-group">
+                <label for="jobDescription">Job Description</label>
+                <textarea id="jobDescription" name="jobDescription" placeholder="Enter the job description" required minlength="50"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Select a department</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                    <!-- Add more departments as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jobLocation">Job Location</label>
+                <input type="text" id="jobLocation" name="jobLocation" placeholder="Enter the job location" required>
+            </div>
+            <div class="form-group">
+                <label for="employmentType">Employment Type</label>
+                <select id="employmentType" name="employmentType" required>
+                    <option value="" disabled selected>Select employment type</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Internship">Internship</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="salaryRange">Salary Range</label>
+                <input type="text" id="salaryRange" name="salaryRange" placeholder="Enter the salary range" required>
+            </div>
+            <div class="form-group">
+                <label for="applicationDeadline">Application Deadline</label>
+                <input type="date" id="applicationDeadline" name="applicationDeadline" required>
+            </div>
+            <div class="form-group">
+                <label for="requiredQualifications">Required Qualifications</label>
+                <textarea id="requiredQualifications" name="requiredQualifications" placeholder="Enter the required qualifications" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="preferredQualifications">Preferred Qualifications</label>
+                <textarea id="preferredQualifications" name="preferredQualifications" placeholder="Enter the preferred qualifications"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="responsibilities">Responsibilities</label>
+                <textarea id="responsibilities" name="responsibilities" placeholder="Enter the job responsibilities" required></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="button" onclick="saveAsDraft()">Save as Draft</button>
+                <button type="submit">Publish</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/JobCreate&Publish/JobCreate_Screen/script.js"></script>
+</body>
+</html>

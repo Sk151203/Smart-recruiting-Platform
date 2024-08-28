@@ -1,0 +1,71 @@
+/* Ensure the styles are consistent with your design. Add or update the following in styles.css:
+
+ */
+
+ /* Interview Scheduling Dashboard */
+#upcomingInterviews {
+    margin-bottom: 20px;
+}
+
+#interviewsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#interviewsTable th, #interviewsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#interviewsTable th {
+    background-color: #f4f4f4;
+}
+
+button {
+    margin-right: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.view {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+button.view:hover {
+    background-color: #1e88e5;
+}
+
+button.reschedule {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+button.reschedule:hover {
+    background-color: #fb8c00;
+}
+
+button.cancel {
+    background-color: #f44336;
+    color: #fff;
+}
+
+button.cancel:hover {
+    background-color: #e53935;
+}
+
+button#scheduleNewInterview {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#scheduleNewInterview:hover {
+    background-color: #45a049;
+}
