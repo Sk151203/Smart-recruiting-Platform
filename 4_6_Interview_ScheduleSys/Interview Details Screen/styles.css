@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.interview-scheduling-container {
+.interview-details-container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -21,26 +21,29 @@ h1 {
     margin-bottom: 20px;
 }
 
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
+.info-section {
+    margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.info-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
 }
 
-select, input[type="date"], input[type="time"], input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.info-section p {
+    margin: 5px 0;
+    font-size: 1em;
 }
 
-select[multiple] {
-    height: auto;
+strong {
+    font-weight: bold;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 button {
@@ -57,4 +60,20 @@ button {
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+
+button#rescheduleInterview {
+    background-color: #ff9800;
+}
+
+button#rescheduleInterview:hover {
+    background-color: #fb8c00;
+}
+
+button#cancelInterview {
+    background-color: #f44336;
+}
+
+button#cancelInterview:hover {
+    background-color: #e53935;
 }

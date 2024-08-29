@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+#dateRange {
+    margin-left: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#refreshButton {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#refreshButton:hover {
+    background-color: #0056b3;
+}
+
+#keyMetrics {
+    margin-bottom: 20px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.metric {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric h3 {
+    margin: 0 0 10px 0;
+}
+
+#charts {
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between; /* Equal space between charts */
+    flex-wrap: wrap;
+    gap: 20px; /* Space between charts */
+}
+
+.chart-container .chart {
+    flex: 1;
+    min-width: 300px; /* Ensures a minimum width for each chart */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#applicationsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#applicationsTable th, #applicationsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#applicationsTable th {
+    background-color: #f4f4f4;
+}
+
+button.view-details {
+    padding: 6px 12px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.view-details:hover {
+    background-color: #1e88e5;
+}

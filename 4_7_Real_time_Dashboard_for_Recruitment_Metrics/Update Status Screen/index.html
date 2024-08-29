@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Status</title>
+    <link rel="stylesheet" href="/4_7_Real_time_Dashboard_for_Recruitment_Metrics/Update Status Screen/styles.css">
+</head>
+<body>
+    <div class="update-status-container">
+        <h2>Update Status</h2>
+
+        <div class="current-status">
+            <label for="currentStatus">Current Status</label>
+            <p id="currentStatus">In Progress</p> <!-- This should be dynamically populated -->
+        </div>
+
+        <form id="updateStatusForm">
+            <div class="form-group">
+                <label for="newStatus">New Status</label>
+                <select id="newStatus" name="newStatus" required>
+                    <option value="" disabled selected>Select new status</option>
+                    <option value="New">New</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Hired">Hired</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea id="notes" name="notes" placeholder="Enter any notes"></textarea>
+            </div>
+
+            <button type="submit">Save Status</button>
+        </form>
+    </div>
+
+    <script src="/4_7_Real_time_Dashboard_for_Recruitment_Metrics/Update Status Screen/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Scheduling</title>
+    <link rel="stylesheet" href="/4_6_Interview_ScheduleSys/Interview Scheduling Screen/styles.css">
+</head>
+<body>
+    <div class="interview-scheduling-container">
+        <h1>Interview Scheduling</h1>
+        <form id="schedulingForm">
+            <div class="form-group">
+                <label for="applicantName">Applicant Name</label>
+                <select id="applicantName" name="applicantName" required>
+                    <option value="" disabled selected>Select applicant</option>
+                    <!-- Populate with applicant options -->
+                    <option value="john_doe">John Doe</option>
+                    <option value="jane_smith">Jane Smith</option>
+                    <!-- More options -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <select id="jobTitle" name="jobTitle" required>
+                    <option value="" disabled selected>Select job title</option>
+                    <!-- Populate with job title options -->
+                    <option value="software_engineer">Software Engineer</option>
+                    <option value="data_scientist">Data Scientist</option>
+                    <!-- More options -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interviewDate">Interview Date</label>
+                <input type="date" id="interviewDate" name="interviewDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="interviewTime">Interview Time</label>
+                <input type="time" id="interviewTime" name="interviewTime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="interviewers">Interviewers</label>
+                <select id="interviewers" name="interviewers" multiple required>
+                    <!-- Populate with interviewer options -->
+                    <option value="interviewer1">Interviewer 1</option>
+                    <option value="interviewer2">Interviewer 2</option>
+                    <!-- More options -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interviewMode">Interview Mode</label>
+                <select id="interviewMode" name="interviewMode" required>
+                    <option value="" disabled selected>Select interview mode</option>
+                    <option value="in_person">In-Person</option>
+                    <option value="video_call">Video Call</option>
+                    <option value="phone_call">Phone Call</option>
+                    <option value="teams_call">Teams Call</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="locationGroup" style="display: none;">
+                <label for="interviewLocation">Interview Location</label>
+                <input type="text" id="interviewLocation" name="interviewLocation" placeholder="Enter interview location">
+            </div>
+
+            <button type="submit">Schedule Interview</button>
+        </form>
+    </div>
+
+    <script src="/4_6_Interview_ScheduleSys/Interview Scheduling Screen/script.js"></script>
+</body>
+</html>

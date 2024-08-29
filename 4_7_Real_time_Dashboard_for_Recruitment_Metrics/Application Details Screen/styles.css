@@ -1,0 +1,72 @@
+/* General styles for application details */
+.application-details-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#statusHistory {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#statusHistory th, #statusHistory td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#statusHistory th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#updateStatusButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button#updateStatusButton:hover {
+    background-color: #0056b3;
+}
+
+button#sendMessageButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button#sendMessageButton:hover {
+    background-color: #218838;
+}

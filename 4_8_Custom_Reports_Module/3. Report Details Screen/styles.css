@@ -1,0 +1,80 @@
+/* Global Styles for Report Details Screen */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Report Information Section */
+#reportInformation {
+    margin-bottom: 20px;
+}
+
+#reportInformation p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Report Data Section */
+#reportData {
+    margin-bottom: 20px;
+}
+
+#reportDataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#reportDataTable th, #reportDataTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#reportDataTable th {
+    background-color: #f4f4f4;
+}
+
+/* Actions Section */
+#actions button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#editReport {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#deleteReport {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#exportReport {
+    background-color: #28a745;
+    color: #fff;
+}

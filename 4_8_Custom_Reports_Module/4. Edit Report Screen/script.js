@@ -1,6 +1,31 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Example data for demonstration
+    const reportData = {
+        name: 'Example Report',
+        dateRange: '2024-08-20 to 2024-08-29',
+        status: 'New',
+        position: 'Software Engineer',
+        source: 'Job Board',
+        fields: ['applicantName', 'dateApplied', 'status', 'source']
+    };
+
+    // Pre-fill form with existing data
+    document.getElementById('reportName').value = reportData.name;
+    document.getElementById('dateRange').value = reportData.dateRange;
+    document.getElementById('status').value = reportData.status;
+    document.getElementById('position').value = reportData.position;
+    document.getElementById('source').value = reportData.source;
+
+    // Pre-check fields checklist
+    reportData.fields.forEach(field => {
+        const checkbox = document.getElementById(field);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    });
+
     // Handle form submission
-    document.getElementById('createReportForm').addEventListener('submit', function(event) {
+    document.getElementById('editReportForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
         // Collect form data
@@ -19,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Source:', source);
         console.log('Fields:', fields);
 
-        // Implement report generation logic here
-        alert('Report generated successfully!');
+        // Implement save changes logic here
+        alert('Report updated successfully!');
     });
 
     // Placeholder logic for dynamic population of positions and sources

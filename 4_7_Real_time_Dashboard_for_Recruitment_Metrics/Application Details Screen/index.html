@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details</title>
+    <link rel="stylesheet" href="/4_7_Real_time_Dashboard_for_Recruitment_Metrics/Application Details Screen/styles.css">
+</head>
+<body>
+    <div class="application-details-container">
+        <header>
+            <h1>Application Details</h1>
+        </header>
+
+        <section id="applicantInformation">
+            <h2>Applicant Information</h2>
+            <div class="info-item">
+                <span class="info-label">Name:</span>
+                <span id="applicantName">John Doe</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Position:</span>
+                <span id="positionApplied">Software Engineer</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Source:</span>
+                <span id="source">LinkedIn</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Date Applied:</span>
+                <span id="dateApplied">2024-08-15</span>
+            </div>
+        </section>
+
+        <section id="applicationStatus">
+            <h2>Application Status</h2>
+            <div class="info-item">
+                <span class="info-label">Current Status:</span>
+                <span id="currentStatus">In Progress</span>
+            </div>
+            <h3>Status History</h3>
+            <table id="statusHistory">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example status history rows -->
+                    <tr>
+                        <td>2024-08-16</td>
+                        <td>Application Received</td>
+                        <td>Initial review completed.</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-17</td>
+                        <td>Interview Scheduled</td>
+                        <td>Interview set for 2024-08-20.</td>
+                    </tr>
+                    <!-- Add more status history rows dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="actions">
+            <button id="updateStatusButton">Update Status</button>
+            <button id="sendMessageButton">Send Message</button>
+        </section>
+    </div>
+
+    <script src="/4_7_Real_time_Dashboard_for_Recruitment_Metrics/Application Details Screen/script.js"></script>
+</body>
+</html>

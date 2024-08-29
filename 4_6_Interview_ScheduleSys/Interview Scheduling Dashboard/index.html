@@ -1,58 +1,55 @@
-<!-- Create or update interview-dashboard.html:
-
- -->
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interview Scheduling Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/4_6_Interview_ScheduleSys/Interview Scheduling Dashboard/styles.css">
 </head>
 <body>
-    <h1>Interview Scheduling Dashboard</h1>
+    <div class="dashboard-container">
+        <h1>Interview Scheduling Dashboard</h1>
 
-    <section id="upcomingInterviews">
-        <h2>Upcoming Interviews</h2>
-        <p id="upcomingInterviewsCount">Number of upcoming interviews: <span>10</span></p>
-    </section>
+        <section id="upcomingInterviews">
+            <h2>Upcoming Interviews</h2>
+            <p id="upcomingInterviewsCount">Number of upcoming interviews: <span>10</span></p>
+        </section>
 
-    <section id="interviewsList">
-        <h2>Interviews List</h2>
-        <table id="interviewsTable">
-            <thead>
-                <tr>
-                    <th>Applicant Name</th>
-                    <th>Job Title</th>
-                    <th>Interview Date</th>
-                    <th>Interview Time</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Example interview rows -->
-                <tr>
-                    <td>John Doe</td>
-                    <td>Software Engineer</td>
-                    <td>2024-09-01</td>
-                    <td>10:00 AM</td>
-                    <td>Scheduled</td>
-                    <td>
-                        <button class="view">View</button>
-                        <button class="reschedule">Reschedule</button>
-                        <button class="cancel">Cancel</button>
-                    </td>
-                </tr>
-                <!-- Add more interview rows dynamically -->
-            </tbody>
-        </table>
-    </section>
+        <section id="interviewsList">
+            <h2>Interviews List</h2>
+            <table id="interviewsTable">
+                <thead>
+                    <tr>
+                        <th>Applicant Name</th>
+                        <th>Job Title</th>
+                        <th>Interview Date</th>
+                        <th>Interview Time</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example interview rows -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Software Engineer</td>
+                        <td>2024-09-01</td>
+                        <td>10:00 AM</td>
+                        <td>Scheduled</td>
+                        <td>
+                            <button class="view">View</button>
+                            <button class="reschedule">Reschedule</button>
+                            <button class="cancel">Cancel</button>
+                        </td>
+                    </tr>
+                    <!-- Add more interview rows dynamically -->
+                </tbody>
+            </table>
+        </section>
 
-    <button id="scheduleNewInterview">Schedule New Interview</button>
+        <button id="scheduleNewInterview">Schedule New Interview</button>
+    </div>
 
-    <script src="interview-dashboard.js"></script>
+    <script src="/4_6_Interview_ScheduleSys/Interview Scheduling Dashboard/script.js"></script>
 </body>
 </html>
